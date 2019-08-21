@@ -2,7 +2,7 @@
 
 1. This script follow all the followers of an target github user consuming the api;
 2. OBS: Make sure you are careful when using this it will be apparent that you are being spammy so use at your own risk;
-3. If you like it make sure to let your star, thank you!
+3. If you like it, make sure to give :star: please, thank you :smile:!
 
 ```
                / ,
