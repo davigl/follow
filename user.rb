@@ -6,7 +6,7 @@ require 'base64'
 class User
   include Github
 	# Constructor that receives git username and password.
-	
+
   def initialize(username, password)
     @credentials = Base64.encode64("#{username}:#{password}")
   end
