@@ -1,33 +1,34 @@
-require_relative 'github'
+# frozen_string_literal: true
 
-include Github
+require_relative 'github'
+require 'base64'
 
 class User
-	# Constructor that receives git username and password.
+  include Github
+  # Constructor that receives git username and password.
 
 	def initialize(username, password)
-		@username, @password = username, password
-	end
+		@credentials = Base64.encode64("#{username}:#{password}")
+  end
 
-	# Method to follow one github user.
+  # Method to follow one github user.
 
-	def follow(user)
-		follow_user(@username, @password, user)
-	end
+  def follow(user)
+    follow_user(@credentials, user)
+  end
 
-	# Method that loops through user following page and follow their followers until the last page.
+  # Method that loops through user following page and follow their followers until the last page.
 
-	def follow_all(user)
-		current_page = 1
+  def follow_all(user)
+    current_page = 1
 
-		loop do
-			followers = get_followers(user, current_page)
+    loop do
+      followers = get_followers(user, current_page)
+      current_page += 1
 
-			current_page += 1
-
-			followers.any? ? follow_all_users(@username, @password, followers) : break
-		end
-	end
+      followers.any? ? follow_all_users(@credentials, followers) : break
+    end
+  end
 end
 
 # Receiving params, username, password, followers_user
