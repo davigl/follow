@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'httparty'
-require 'base64'
 
 module Github
   # Following a specific github user, using basic auth.
