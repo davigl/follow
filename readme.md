@@ -1,7 +1,7 @@
 # <div align="center"> Github Follow via API </div>
 
 1. This script follow all the followers of the target (github user) using developer api;
-2. OBS: Make sure you are careful when using this it will be apparent that you are being spammy so use at your own risk;
+2. OBS: Make sure you're being careful when using this, it will be apparent that you are being spammy so use at your own risk;
 3. If you like it, make sure to give :star: please, thank you :smile:!
 
 ```
