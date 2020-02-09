@@ -1,8 +1,9 @@
-# <div align="center"> Github Follow via API </div>
+<h1 align="center"> Github Follow via API </h1>
 
-1. This script follow all the followers of the target (github user) using developer api;
-2. OBS: Make sure you're being careful when using this, it will be apparent that you are being spammy so use at your own risk;
-3. If you like it, make sure to give :star: please, thank you :smile:!
+1. This script follow all the followers of the target (github user) using developer api.
+2. **OBS**: Make sure you're being careful when using this, it will be apparent that you are being spammy so use at your own risk.
+3. If you like it, make sure to give :star: please, thank you! :smile:
+<hr>
 
 ```
                / ,
@@ -21,55 +22,49 @@
 I do not use this, ok, only for study purposes :).
 ```
 
-### Prerequisites
+## Prerequisites:
 
 ```
-httparty
-ruby >= 1.9.2
-rubygems >= 1.3.1
+• httparty
+• ruby >= 1.9.2
+• rubygems >= 1.3.1
 ```
 
-### Installing
+## Installing:
 
-##### Clone Repository
+###### Clone Repository
 
 ```shell
 git clone https://github.com/Davigl/github-follow-api.git
 ```
 
-##### Check your Ruby version
+###### Check your Ruby version
 
 ```shell
-ruby -v
+$ ruby -v
 ```
 
-If you dont have it, install using [rbenv](https://github.com/rbenv/rbenv) (it could take a while):
+**If you dont have it, install using [rbenv](https://github.com/rbenv/rbenv) (it could take a while):**
 
 ```shell
-rbenv install version
+$ rbenv install version
 ```
 
-##### Install httparty gem
+###### Install httparty gem
 
 ```shell
-gem install httparty
+$ gem install httparty
 ```
 
-### Running the script.
+## Running the script:
 
-To run this script you need to insert your github credentials (username, password) and pick one target person that you want to follow her followers.
+**To run this script you need to insert your github credentials (username, password) and pick one target person that you want to follow her followers.**
 
-```shell
-ruby user.rb your_github_username your_github_password target_person
+###### Where login is the username and password the password and all the target followers. 
+```ruby
+$ ruby user.rb <login> <password> <target>
 ```
 
-for example: 
-
-```shell
-ruby user.rb test123 test1234 target
-```
-
-Where test123 is the username and test1234 the password and all the target followers.
 
 ### License
 
