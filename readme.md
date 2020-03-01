@@ -68,4 +68,4 @@ $ ruby user.rb <login> <password> <target>
 
 ### License
 
-Licensed by [GNU General Public License v3.0](https://github.com/Davigl/github-follow-api/blob/master/LICENSE).
+Licensed by [GNU General Public License v3.0](https://github.com/Davigl/github-follower/blob/master/LICENSE).
